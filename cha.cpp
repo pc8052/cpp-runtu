@@ -26,22 +26,19 @@ int Cha::Getlive()
 	return livetime;
 }
 
-int Cha::Islive(int livetimes)
+int Cha::Islive()
 {
 	cout<<"请输入猹是否活着：1=活着0=死亡"<<endl;
-	cin>>livetimes;
-	livetime=livetimes;
+	cin>>livetime;
 	cout<<"猹状态="<<livetime<<endl;
 
 	if(livetime==0)
 	{
 		cout<<"猹挂掉了！！开始新一轮找碴"<<endl;
-	  //return 0;
 	}
 	else
 	{
 		cout<<"猹还活着！"<<endl;
-		//return 1;
 	}
 	return livetime;
 }

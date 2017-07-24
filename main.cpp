@@ -20,8 +20,7 @@ int main()
 	char *p="钢叉";
 	//cout<<p<<endl;
 	runtu.Set(12,p); //设定闰土参数
-	cha.Set(1,20,0); //设定猹的参数
-
+	cha.Set(10,20,0); //设定猹的参数
 	chaLive=cha.Getlive();//读猹的生命值
 
 	for(;;)
@@ -33,10 +32,8 @@ int main()
 			stabResult=runtu.Stab();  //刺猹并返回结果
 			if(stabResult)
 			{
-				chaLive=cha.Islive(0); //判断猹是否活着
+				chaLive=cha.Islive(); //判断猹是否活着
 			}
-
-
 		}
 		else
 		{
@@ -44,10 +41,6 @@ int main()
 			cout<<"等待输入。。。"<<endl;
 			cin>>chaLive;
 		}
-		/*i=cha.Islive(1);
-		cout<<"i="<<i<<endl;
-		if(i==1)
-			{runtu.Stab();}*/
 	}
 
 	return 0;

@@ -11,8 +11,8 @@
 class Runtu
 {
 	public:
-		void Set(int,char *);
-		int Stab();
+		void Set(int, char *);
+		int  Stab();
 	private:
 		int ageruntu;
 		char *toolsname;

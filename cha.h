@@ -12,7 +12,7 @@ class Cha
 {
 	public:
 		void Set(int,int,int);
-		int  Islive(int);
+		int  Islive();
 		int  Getlive();
 	private:
 		int agecha;
