@@ -12,7 +12,8 @@ class Runtu
 {
 	public:
 		void Set(int, char *);
-		int  Stab();
+		void Stab();
+		int IsStabed();
 	private:
 		int ageruntu;
 		char *toolsname;

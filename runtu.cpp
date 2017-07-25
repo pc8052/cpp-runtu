@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include "runtu.h"
+#include <time.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -19,22 +21,31 @@ void Runtu::Set(int ages,char *tools)
 
 }
 
-int Runtu::Stab()
+void Runtu::Stab()
 {
+	int randNum=0;
+	cout<<"~~随机数输入刺猹结果:非0=刺中 0=失败"<<endl;
+	//cin>>stabed;
+	//SetTimer(0,200,NULL);
+	srand((unsigned)time(0));
+	randNum=rand() % 4;
 
-	cout<<"~~请输入刺猹结果:1=刺中 0=失败"<<endl;
-	cin>>stabed;
-	if(stabed==1)
-		{
-			cout<<"刺中了！看看猹活着吗。。。"<<endl;
-			return 1;
-		}
+	if(randNum)
+	{
+		stabed=1;
+		cout<<"randNum="<<randNum<<"  刺中了！看看猹活着吗。。。"<<endl;
+		//return 1;
+	}
 	else
-		{
-			cout<<"没刺中～"<<endl;
-			return 0;
-		}
+	{
+		cout<<"randNum="<<randNum<<"  没刺中～"<<endl;
+		//return 0;
+		stabed=0;
+	}
 }
 
-
+int Runtu::IsStabed()
+{
+	return stabed;
+}
 

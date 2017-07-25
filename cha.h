@@ -14,6 +14,8 @@ class Cha
 		void Set(int,int,int);
 		int  Islive();
 		int  Getlive();
+		void Changelive(int livetimes);
+		void Setlive(int livetimes);
 	private:
 		int agecha;
 		int weightcha;
